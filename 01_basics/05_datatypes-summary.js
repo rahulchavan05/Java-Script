@@ -13,7 +13,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);             // false
+//console.log(id === anotherId);             // false
 
 // bigInt
 
@@ -38,4 +38,33 @@ const myFunction = function(){
    console.log("Hello world");
 }
 
-console.log(typeof myFunction)
+//console.log(typeof myFunction)
+//console.log(myFunction)
+
+
+//==================Memory=========================
+
+// Two Types : 1) Stack (Primitive) , Heap (Non-Promitive)
+
+let myName = "Name 1" 
+
+let anothername = myName 
+
+anothername = "Name 2"
+
+console.log(myName)
+console.log(anothername)
+
+let userOne = {
+   email : "user.com",
+   upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user2.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
