@@ -1,7 +1,7 @@
 // const tinderUser = new Object()   //singleton object 
 const tinderUser = {}             // Non singleton object 
 
-// Vules added in objects 
+// #Vules added in objects 
 tinderUser.id = "123"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIN = false
@@ -59,13 +59,43 @@ const User = [
 
 // console.log(User[1].name)
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIN'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIN'));
+
+const course = {
+    couserename: "JS in hindi",
+    price: "999",
+    courseInstructor: "rahul"
+}
+
+console.log(course.courseInstructor);
+
+// #object restructuring 
+
+const {courseInstructor} = course
+
+// console.log(courseInstructor);
+
+const {courseInstructor: Instructor} = course
+
+// console.log(Instructor);
 
 
+// #Json
 
+// {
+//     "name": "rahul",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
