@@ -51,6 +51,41 @@ function loginUserMassage(username = "Sam")
     return `${username} just logged in`
 }
 
-console.log(loginUserMassage("Rahul"));
-console.log(loginUserMassage());
+// console.log(loginUserMassage("Rahul"));
+// console.log(loginUserMassage());
+
+function calculateCarPrice(val1, val2, ...num1){
+    return num1
+}
+
+
+// console.log(calculateCarPrice(100, 200, 300, 400));
+
+const user = {
+    username: "Rahul",
+    prices: 200
+}
+
+
+function handleObjects(anyObjects){
+    console.log(`my name is ${anyObjects.username} and I have Rs.${anyObjects.prices}`);
+    
+}
+
+// handleObjects(user)
+
+// handleObjects({username:"Rahul", prices: 2000})
+
+const myNewArray = [10, 20, 30, 40]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([1, 2, 3, 4, 5]));
+
+
+
 
